@@ -10,7 +10,10 @@
 		7A1158C8256A479700181BAB /* FindTuneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1158C7256A479700181BAB /* FindTuneApp.swift */; };
 		7A1158CA256A479700181BAB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1158C9256A479700181BAB /* ContentView.swift */; };
 		7A1158CC256A479A00181BAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1158CB256A479A00181BAB /* Assets.xcassets */; };
-		7A1158CF256A479A00181BAB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1158CE256A479A00181BAB /* Preview Assets.xcassets */; };
+		7A1158DA256A4A5600181BAB /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1158D9256A4A5600181BAB /* API.swift */; };
+		7A1158DE256A4B7100181BAB /* iTunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1158DD256A4B7100181BAB /* iTunes.swift */; };
+		7A6BDDDF256B205D005B7394 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BDDDE256B205D005B7394 /* About.swift */; };
+		7A6BDDE8256B2806005B7394 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6BDDE7256B2806005B7394 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,9 +21,12 @@
 		7A1158C7256A479700181BAB /* FindTuneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTuneApp.swift; sourceTree = "<group>"; };
 		7A1158C9256A479700181BAB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A1158CB256A479A00181BAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7A1158CE256A479A00181BAB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7A1158D0256A479A00181BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A1158D1256A479A00181BAB /* FindTune.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FindTune.entitlements; sourceTree = "<group>"; };
+		7A1158D9256A4A5600181BAB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7A1158DD256A4B7100181BAB /* iTunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunes.swift; sourceTree = "<group>"; };
+		7A6BDDDE256B205D005B7394 /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		7A6BDDE7256B2806005B7394 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,22 +59,25 @@
 		7A1158C6256A479700181BAB /* FindTune */ = {
 			isa = PBXGroup;
 			children = (
+				7A6BDDEA256B29D0005B7394 /* Models */,
 				7A1158C7256A479700181BAB /* FindTuneApp.swift */,
 				7A1158C9256A479700181BAB /* ContentView.swift */,
+				7A6BDDE7256B2806005B7394 /* InfoView.swift */,
+				7A6BDDDE256B205D005B7394 /* About.swift */,
 				7A1158CB256A479A00181BAB /* Assets.xcassets */,
 				7A1158D0256A479A00181BAB /* Info.plist */,
 				7A1158D1256A479A00181BAB /* FindTune.entitlements */,
-				7A1158CD256A479A00181BAB /* Preview Content */,
 			);
 			path = FindTune;
 			sourceTree = "<group>";
 		};
-		7A1158CD256A479A00181BAB /* Preview Content */ = {
+		7A6BDDEA256B29D0005B7394 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7A1158CE256A479A00181BAB /* Preview Assets.xcassets */,
+				7A1158D9256A4A5600181BAB /* API.swift */,
+				7A1158DD256A4B7100181BAB /* iTunes.swift */,
 			);
-			path = "Preview Content";
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +108,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Tavitian Cloud";
 				TargetAttributes = {
 					7A1158C3256A479700181BAB = {
 						CreatedOnToolsVersion = 12.2;
@@ -128,7 +138,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A1158CF256A479A00181BAB /* Preview Assets.xcassets in Resources */,
 				7A1158CC256A479A00181BAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +150,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A1158CA256A479700181BAB /* ContentView.swift in Sources */,
+				7A6BDDDF256B205D005B7394 /* About.swift in Sources */,
+				7A1158DA256A4A5600181BAB /* API.swift in Sources */,
 				7A1158C8256A479700181BAB /* FindTuneApp.swift in Sources */,
+				7A1158DE256A4B7100181BAB /* iTunes.swift in Sources */,
+				7A6BDDE8256B2806005B7394 /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,13 +280,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColour;
 				CODE_SIGN_ENTITLEMENTS = FindTune/FindTune.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"FindTune/Preview Content\"";
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FindTune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -281,7 +293,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.FindTune;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.findtune;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -291,13 +303,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColour;
 				CODE_SIGN_ENTITLEMENTS = FindTune/FindTune.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "\"FindTune/Preview Content\"";
 				DEVELOPMENT_TEAM = JDL5FY6SCC;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = FindTune/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -305,7 +316,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.FindTune;
+				PRODUCT_BUNDLE_IDENTIFIER = cloud.tavitian.findtune;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
